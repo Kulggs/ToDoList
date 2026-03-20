@@ -23,7 +23,7 @@ def save_file(tasks):
 def load_tasks():
     try:
         with open("tasks.json", "r") as f:
-            data = json.load(f)  # json.load() сам прочитає файл
+            data = json.load(f)  
             tasks = []
             for item in data:
                 task = ToDo(item["title"])
